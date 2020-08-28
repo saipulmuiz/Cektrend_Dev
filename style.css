@@ -1,0 +1,1095 @@
+/* CSS Animasi Responsive Menu */
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(100%, 0, 0);
+        transform: translate3d(100%, 0, 0);
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ul,
+ol,
+li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+#outer-wrapper {
+    width: 100%;
+    margin: 0;
+}
+
+.header {
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    z-index: 10;
+    transition: .7s;
+    top: 0;
+}
+
+.header.headBlack {
+    background-color: #000;
+}
+
+.logo {
+    margin: 10px;
+    padding: 0 50px;
+    float: left;
+    width: 25%;
+}
+
+.logo h1 {
+    color: #fff;
+    font-size: 37px;
+    padding: 15px;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* CSS Navigasi */
+.navigasi {
+    width: 65%;
+    margin: auto;
+    float: left;
+    margin-left: 80px;
+    padding-top: 20px;
+}
+
+.navigasi a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 15px;
+    text-decoration: none;
+    font-size: 23px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navigasi a.active-scrollsection {
+    color: #0072ff;
+}
+
+.navigasi a:hover {
+    color: #045cc0
+}
+
+.navigasi .icon {
+    display: none;
+}
+
+/* CSS Section Article */
+#about,
+#jasa,
+#team,
+#testi,
+#hasil,
+#kontak,
+#find {
+    padding-top: 60px;
+}
+
+#intro {
+    height: 700px;
+    width: 100%;
+    background: #ccc url(gambar/bg1.jpg) no-repeat;
+    background-size: cover;
+    padding: 0px;
+    position: relative;
+}
+
+.bayangan {
+    background: #111;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    width: 100%;
+    height: 100%;
+    opacity: 0.50;
+}
+
+.info {
+    position: absolute;
+    top: 50%;
+    left: 15%;
+    right: 15%;
+    text-align: center;
+    color: #fff;
+}
+
+.info h2 {
+    font-size: 3em;
+    font-family: helvetica;
+    margin: 0;
+}
+
+.info p {
+    font-size: 1.5em;
+    margin: 0;
+    line-height: 50px;
+}
+
+.more a {
+    position: absolute;
+    top: 85%;
+    left: 15%;
+    right: 15%;
+    text-align: center;
+    color: #fff;
+    width: 10%;
+    margin: 0 auto;
+    display: block;
+    font-size: 2em;
+}
+
+.more h2 {
+    margin: 0;
+}
+
+#about {
+    height: 100%;
+}
+
+.konten {
+    height: 436px;
+    background-color: #ff2f2f;
+}
+
+#about h2 {
+    margin: 15px auto;
+    padding: 10px;
+    text-align: center;
+    font-size: 2.7em;
+    border-bottom: 2px solid;
+    width: 100%;
+    max-width: 250px;
+}
+
+.about_img {
+    width: 43%;
+    float: left;
+    text-align: center;
+    background-color: #676767;
+    padding: 0 35px;
+    height: 650px;
+}
+
+.about_img img {
+    width: 100%;
+    height: 100%;
+    max-width: 500px;
+}
+
+.about_text {
+    width: 50%;
+    margin-left: 20px;
+    float: left;
+    font-size: 28px;
+}
+
+.about_text h3 {
+    font-size: 1.5em;
+    color: #fff;
+    font-weight: 700;
+}
+
+.slider {
+    margin: auto;
+    margin-top: 10px;
+    width: 100%;
+    background-color: #7d7d7d;
+    height: 600px;
+}
+
+.konten,
+.konten2,
+.konten3,
+.konten4 {
+    margin-top: 10px;
+    width: 100%;
+    background-color: #1894ff;
+    height: 650px;
+    font-size: 100px;
+    text-align: center;
+}
+
+.hasil {
+    width: 100%;
+    background-color: #676767;
+    height: auto;
+    font-size: 100px;
+    text-align: center;
+}
+
+.konten3 {
+    background-color: #0072ff;
+}
+
+.konten2 h2,
+.konten3 h2,
+.konten4 h2 {
+    margin: 0 auto;
+    padding: 25px 10px;
+    text-align: center;
+    color: #fff;
+    font-size: 0.5em;
+    border-bottom: 2px solid;
+    width: 100%;
+    max-width: 370px;
+}
+
+.srv,
+.tim,
+.prt {
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    width: 100%;
+    max-width: 280px;
+    padding: 20px;
+    font-size: 0.8em;
+    margin: 0;
+    margin-top: 30px;
+}
+
+.srv h3 {
+    font-size: 32px;
+    margin: 0;
+    padding: 15px 10px;
+}
+
+.srv p {
+    font-size: 16px;
+    font-family: verdana;
+    color: #fff;
+    padding: 10px 0;
+    margin: 0;
+    border-bottom: 1px solid;
+    border-top: 1px solid;
+}
+
+.mytim {
+    padding: 0 40px;
+}
+
+.tim h3 {
+    font-size: 28px;
+    margin: 0;
+    padding: 15px 10px;
+}
+
+.tim img {
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    border: 3px solid #ffffff;
+}
+
+.tim p {
+    font-size: 22px;
+    font-family: verdana;
+    color: #fff;
+    padding: 10px 0;
+    margin: 0;
+    border-top: 1px solid;
+}
+
+.medsos a {
+    color: #fff;
+    font-size: 34px;
+    padding: 0;
+    display: inline-block;
+    margin: 0 auto;
+}
+
+.medsos a:hover {
+    color: #000000;
+}
+
+.medsos-svg {
+    fill: #fff;
+    width: 24px;
+    height: 24px;
+}
+
+.prt h3 {
+    font-size: 32px;
+    margin: 0;
+    padding: 15px 10px;
+}
+
+.prt p {
+    font-size: 16px;
+    font-family: verdana;
+    color: #fff;
+    padding: 10px 0;
+    margin: 0;
+    border-bottom: 1px solid;
+    border-top: 1px solid;
+}
+
+.myporto {
+    padding: 0 125px;
+}
+
+.testi {
+    padding: 0 125px;
+}
+
+.testi svg {
+    width: 50px;
+    height: 50px;
+}
+
+.services {
+    display: inline-block;
+}
+
+.services svg {
+    width: 70px;
+    height: 70px;
+}
+
+.konten4 {
+    background-color: #fff;
+}
+
+.konten4 h2 {
+    color: #333;
+}
+
+/* CSS Kartu */
+
+/* CSS Kontak */
+.kontak_bg {
+    position: relative;
+}
+
+.kontak_bg:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #ff2f2f url(gambar/kontak_bg.jpg) no-repeat;
+    background-size: cover;
+    filter: brightness(0.7);
+}
+
+.konten5 {
+    position: relative;
+    margin-top: 10px;
+    height: 100%;
+    color: #fff;
+}
+
+.konten5 h2 {
+    margin: 0 auto;
+    padding: 25px 10px;
+    text-align: center;
+    color: #fff;
+    font-size: 3.2em;
+    border-bottom: 2px solid;
+    width: 25%;
+}
+
+#form_Pesan {
+    width: 70%;
+    margin: 25px auto;
+    float: left;
+}
+
+.mykontak {
+    width: 85%;
+    margin: 10px auto;
+    text-align: center;
+    padding: 0;
+    display: flex;
+}
+
+.info-kontak {
+    float: right;
+    width: 30%;
+    text-align: left;
+    margin: 25px 0;
+    font-size: 18px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.info-kontak p {
+    font-size: 16px;
+}
+
+.tombol.kontak {
+    background-color: #00245d;
+}
+
+.tombol.kontak:hover {
+    background-color: #000;
+}
+
+.before {
+    float: right;
+}
+
+.after {
+    float: left;
+}
+
+.text {
+    padding: 5px;
+    border: 2px solid #ccc;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.text:focus {
+    border-color: #333;
+}
+
+.masukan,
+select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+    font-size: 22px;
+}
+
+.tombol {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    margin-top: 10px;
+    height: 50px;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    width: 100%;
+    max-width: 115px;
+    cursor: pointer;
+}
+
+.tombol:hover {
+    background-color: #45a049;
+}
+
+.label {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+    font-weight: 700;
+}
+
+.inputan {
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+    margin-left: 20px;
+}
+
+.baris:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* CSS Footer */
+.footer {
+    width: 100%;
+    color: #fff;
+    height: 150px;
+    position: relative;
+    background-image: linear-gradient(to top, #000000 0%, #0072ff 100%)
+}
+
+.footer h2 {
+    font-size: 2em;
+    padding: 10px;
+    text-align: center;
+    margin: 0;
+}
+
+#partikel {
+    margin-top: 10px;
+    width: 100%;
+    color: #fff;
+    height: 300px;
+    position: relative;
+    background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+}
+
+/* CSS ICON Social Media */
+.svg-hide {
+    display: none;
+}
+
+.icon {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    stroke-width: 0;
+    stroke: currentColor;
+    fill: currentColor;
+}
+
+.kartu-profile-social {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.kartu-profile-social__item {
+    display: inline-flex;
+    width: 55px;
+    height: 55px;
+    margin: 15px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    background: #405de6;
+    box-shadow: 0px 7px 30px rgba(43, 98, 169, 0.5);
+    position: relative;
+    font-size: 21px;
+    flex-shrink: 0;
+    transition: all 0.3s;
+}
+
+@media screen and (max-width: 768px) {
+    .kartu-profile-social__item {
+        width: 50px;
+        height: 50px;
+        margin: 10px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .kartu-profile-social__item:hover {
+        transform: scale(1.2);
+    }
+}
+
+.kartu-profile-social__item.facebook {
+    background: linear-gradient(45deg, #3b5998, #0078d7);
+    box-shadow: 0px 4px 30px rgba(43, 98, 169, 0.5);
+}
+
+.kartu-profile-social__item.twitter {
+    background: linear-gradient(45deg, #1da1f2, #0e71c8);
+    box-shadow: 0px 4px 30px rgba(19, 127, 212, 0.7);
+}
+
+.kartu-profile-social__item.instagram {
+    background: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+    box-shadow: 0px 4px 30px rgba(120, 64, 190, 0.6);
+}
+
+.kartu-profile-social__item.github {
+    background: linear-gradient(45deg, #333, #626b73);
+    box-shadow: 0px 4px 30px rgba(63, 65, 67, 0.6);
+}
+
+.kartu-profile-social__item.link {
+    background: linear-gradient(45deg, #d5135a, #f05924);
+    box-shadow: 0px 4px 30px rgba(223, 45, 70, 0.6);
+}
+
+.kartu-profile-social .icon-font {
+    display: inline-flex;
+}
+
+#partikel canvas {
+    width: 100%;
+}
+
+/* CSS Responsive Design */
+@media screen and (min-width: 1024px) {
+    .srv {
+        max-width: 250px !important;
+    }
+
+    .prt {
+        max-width: 230px !important;
+    }
+}
+
+@media screen and (max-width: 980px) {
+    .navigasi {
+        max-width: 510px;
+    }
+
+    .header.headBlack {
+        height: 130px;
+    }
+
+    .navigasi a {
+        font-size: 20px;
+    }
+
+    .info h2 {
+        font-size: 2em;
+    }
+
+    .info p {
+        font-size: 1.2em;
+    }
+
+    .more a {
+        font-size: 1.5em;
+    }
+
+    #about,
+    #jasa,
+    #team,
+    #testi,
+    #hasil,
+    #kontak,
+    #find {
+        padding-top: 120px;
+    }
+
+    #about h2,
+    .konten5 h2 {
+        font-size: 2em;
+    }
+
+    .konten2 h2,
+    .konten3 h2,
+    .konten4 h2 {
+        font-size: 0.3em;
+    }
+
+    .konten2 {
+        height: 780px;
+    }
+
+    .konten3 {
+        height: 950px;
+    }
+
+    .srv,
+    .tim,
+    .prt {
+        max-width: 200px;
+        font-size: 0.5em;
+        margin-top: 15px;
+    }
+
+    .srv h3 {
+        font-size: 22px;
+    }
+
+    .srv p {
+        font-size: 14px;
+    }
+
+    .prt h3 {
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width: 840px) {
+    .navigasi {
+        max-width: 420px;
+    }
+
+    .navigasi a {
+        font-size: 20px;
+    }
+
+    .info h2 {
+        font-size: 1.5em;
+    }
+
+    .info p {
+        font-size: 1em;
+    }
+
+    .more a {
+        font-size: 1.3em;
+    }
+
+    #about h2 {
+        font-size: 1.6em;
+    }
+
+    .about_text h3 {
+        font-size: 1em;
+    }
+
+    .about_text p {
+        font-size: 18px;
+    }
+
+    .konten2 h2 {
+        font-size: 0.25em;
+    }
+
+    .srv h3 {
+        font-size: 16px;
+    }
+
+    .srv p {
+        font-size: 12px;
+    }
+
+    .prt h3 {
+        font-size: 22px;
+    }
+
+    .tim img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .srv,
+    .tim {
+        width: 100%;
+        max-width: 300px
+    }
+
+    .konten3 {
+        height: 850px;
+    }
+
+    .mytim {
+        padding: 0 10px;
+    }
+
+    .tim h3 {
+        font-size: 26px;
+    }
+
+    .tim p {
+        font-size: 18px;
+    }
+
+    .prt {
+        max-width: 145px;
+    }
+
+    .testi {
+        padding: 0 15px;
+    }
+
+    .medsos a {
+        font-size: 22px;
+        padding: 0 5px;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .logo {
+        margin: 0;
+        padding: 0;
+        float: left;
+        width: 30%;
+    }
+
+    .kotak_nav {
+        padding-top: 5px;
+    }
+
+    #about,
+    #jasa,
+    #team,
+    #testi,
+    #hasil,
+    #kontak,
+    #find {
+        padding-top: 60px;
+    }
+
+    .navigasi {
+        max-width: 270px;
+        float: right;
+    }
+
+    /* .icon{color: #fff !important;font-size: 28px!important;} */
+    .header.headBlack {
+        height: 70px;
+    }
+
+    .navigasi.responsive {
+        position: relative;
+        background: #000;
+    }
+
+    .navigasi.responsive .icon {
+        position: absolute;
+        right: 20px;
+        top: 0;
+        margin: 0;
+    }
+
+    .navigasi.responsive a {
+        float: none;
+        display: block;
+        position: relative;
+        top: 0;
+        animation: fadeInRight 1s;
+    }
+
+    .navigasi a {
+        display: none;
+    }
+
+    .navigasi .icon {
+        display: block;
+        float: right;
+        margin-right: 40px;
+    }
+
+    .konten2 h2 {
+        font-size: 22px;
+    }
+
+    .srv,
+    .tim {
+        max-width: 250px;
+    }
+
+    .konten2 h2,
+    .konten3 h2,
+    .konten4 h2 {
+        font-size: 28px;
+    }
+
+}
+
+@media screen and (max-width: 640px) {
+    .about_text h3 {
+        font-size: 26px;
+    }
+
+    .konten3 {
+        height: 880px;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .logo h1 {
+        font-size: 28px;
+    }
+
+    .navigasi {
+        max-width: 220px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .more a {
+        font-size: 20px;
+    }
+
+    .about_text p {
+        font-size: 16px;
+    }
+
+    .about_text h3 {
+        font-size: 26px;
+    }
+
+    .mytim {
+        padding: 0;
+    }
+
+    .srv,
+    .tim {
+        max-width: 215px;
+    }
+
+    .tim h3 {
+        font-size: 20px;
+    }
+
+    .prt {
+        width: 50%;
+        max-width: 150px;
+    }
+
+    .mykontak {
+        display: block
+    }
+
+    #form_Pesan {
+        width: 100%;
+        margin: 25px auto;
+        float: none;
+    }
+
+    .info-kontak {
+        float: none;
+        width: 100%;
+    }
+
+    .inputan {
+        width: 65%;
+    }
+
+    .myporto {
+        padding: 0 60px;
+    }
+
+    .about_text {
+        width: 100%;
+        float: none;
+        font-size: 28px;
+        padding: 20px;
+        margin: 0 auto;
+    }
+
+    .about_img {
+        width: 55%;
+        text-align: center;
+        padding: 0 35px;
+        height: 300px;
+        position: absolute;
+        margin: 150px;
+        background: none;
+    }
+
+    .konten {
+        height: 450px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .info h2 {
+        font-size: 1.2em;
+    }
+
+    .info p {
+        font-size: 14px;
+        line-height: 22px;
+        margin-top: 14px;
+    }
+
+    .more a {
+        font-size: 14px;
+    }
+
+    #about h2 {
+        font-size: 22px;
+        width: 45%;
+    }
+
+    .about_text h3 {
+        font-size: 22px;
+    }
+
+    .about_text p {
+        font-size: 14px;
+    }
+
+    .konten2 h2,
+    .konten3 h2,
+    .konten4 h2,
+    .konten5 h2 {
+        font-size: 22px;
+        width: 50%;
+    }
+
+    .mytim {
+        padding: 0;
+    }
+
+    .konten2 {
+        height: 850px;
+    }
+
+    .tim h3 {
+        font-size: 22px;
+    }
+
+    .tim img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .tim p {
+        font-size: 16px;
+    }
+
+    .prt {
+        max-width: 125px;
+    }
+
+    .prt h3 {
+        font-size: 18px;
+    }
+
+    .srv,
+    .tim {
+        max-width: 135px;
+        padding: 0;
+    }
+
+    .kartu-profile-social__item {
+        width: 40px;
+        height: 40px;
+    }
+
+    .myporto {
+        padding: 0;
+    }
+
+    .konten {
+        height: 300px;
+    }
+
+    .about_img {
+        height: 300px;
+        padding: 0;
+    }
+
+    .about_img img {
+        width: 200px;
+        height: 300px;
+    }
+
+    .about_img {
+        height: 300px;
+        padding: 0;
+        display: none;
+    }
+
+}
